@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: dk.sdu.cbse.collisionsystem.CollisionDetectorTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.145 s -- in dk.sdu.cbse.collisionsystem.CollisionDetectorTest
