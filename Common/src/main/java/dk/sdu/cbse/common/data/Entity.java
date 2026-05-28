@@ -15,7 +15,7 @@ public class Entity implements Serializable {
     private float radius;
     private int healthPoints;
 
-    private Color color = Color.BLACK;
+    private Color color;
     public String getID() {
         return ID.toString();
     }

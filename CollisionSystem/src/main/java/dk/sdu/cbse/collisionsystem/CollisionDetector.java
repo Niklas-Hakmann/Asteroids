@@ -32,6 +32,7 @@ public class CollisionDetector implements IPostEntityProcessingService {
     public void process(GameData gameData, World world) {
         List<Entity> entities = new ArrayList<>(world.getEntities());
         Set<String> currentCollisions = new HashSet<>();
+        Set<String> removed = new HashSet<>();
 
         for (int i = 0; i < entities.size(); i++) {
             for (int j = i + 1; j < entities.size(); j++) {
@@ -43,7 +44,7 @@ public class CollisionDetector implements IPostEntityProcessingService {
                     currentCollisions.add(key);
 
                     if (!activeCollisions.contains(key)) {
-                        handleCollision(a, b, world);
+                        handleCollision(a, b, world, removed);
                     }
                 }
             }
@@ -53,7 +54,7 @@ public class CollisionDetector implements IPostEntityProcessingService {
         activeCollisions.addAll(currentCollisions);
     }
 
-    private void handleCollision(Entity a, Entity b, World world) {
+    private void handleCollision(Entity a, Entity b, World world, Set<String> removed) {
 
         boolean aPlayer = "PLAYER".equals(a.getType());
         boolean bPlayer = "PLAYER".equals(b.getType());
@@ -62,33 +63,50 @@ public class CollisionDetector implements IPostEntityProcessingService {
         boolean aBullet = "BULLET".equals(a.getType());
         boolean bBullet = "BULLET".equals(b.getType());
 
+        if (aBullet || bBullet) {
+            Entity bullet = aBullet ? a : b;
+            Entity other = aBullet ? b : a;
+
+            if (removed.contains(bullet.getID())) {
+                return;
+            }
+            if (!removed.contains(other.getID())) {
+                other.setHealthPoints(other.getHealthPoints() - 1);
+                if (other.getHealthPoints() <= 0) {
+                    destroy(other, world, removed);
+                    if (pointService != null
+                            && ("ASTEROID".equals(other.getType()) || "ENEMY".equals(other.getType()))) {
+                        pointService.addPoint();
+                    }
+                }
+            }
+            destroy(bullet, world, removed);
+            return;
+        }
+
+        if (removed.contains(a.getID()) || removed.contains(b.getID())) {
+            return;
+        }
+
         if ((aPlayer && bAsteroid) || (aAsteroid && bPlayer)) {
             Entity player = aPlayer ? a : b;
             Entity asteroid = aAsteroid ? a : b;
 
             player.setHealthPoints(player.getHealthPoints() - 1);
-            if (player.getHealthPoints() <= 0) world.removeEntity(player);
-            world.removeEntity(asteroid);
-
-        } else if (aBullet || bBullet) {
-            Entity bullet = aBullet ? a : b;
-            Entity other = aBullet ? b : a;
-
-            other.setHealthPoints(other.getHealthPoints() - 1);
-            if (other.getHealthPoints() <= 0) {
-                world.removeEntity(other);
-                if ("ASTEROID".equals(other.getType()) && pointService != null) {
-                    pointService.addPoint();
-                }
-            }
-            world.removeEntity(bullet);
+            if (player.getHealthPoints() <= 0) destroy(player, world, removed);
+            destroy(asteroid, world, removed);
 
         } else {
             a.setHealthPoints(a.getHealthPoints() - 1);
-            if (a.getHealthPoints() <= 0) world.removeEntity(a);
+            if (a.getHealthPoints() <= 0) destroy(a, world, removed);
             b.setHealthPoints(b.getHealthPoints() - 1);
-            if (b.getHealthPoints() <= 0) world.removeEntity(b);
+            if (b.getHealthPoints() <= 0) destroy(b, world, removed);
         }
+    }
+
+    private void destroy(Entity entity, World world, Set<String> removed) {
+        world.removeEntity(entity);
+        removed.add(entity.getID());
     }
 
     private boolean collides(Entity a, Entity b) {

@@ -19,4 +19,9 @@ public class PointSystem implements IPointService {
     public void deductPoint() {
         if(score>0)score--;
     }
+
+    @Override
+    public void reset() {
+        score = 0;
+    }
 }

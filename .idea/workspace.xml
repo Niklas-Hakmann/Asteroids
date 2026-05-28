@@ -4,14 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec162c25-046b-45d5-badd-a65868305b3f" name="Changes" comment="" />
+    <list default="true" id="ec162c25-046b-45d5-badd-a65868305b3f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asteroid/target/Asteroid-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Asteroid/target/Asteroid-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bullet/target/Bullet-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Bullet/target/Bullet-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionSystem/src/main/java/dk/sdu/cbse/collisionsystem/CollisionDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionSystem/src/main/java/dk/sdu/cbse/collisionsystem/CollisionDetector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionSystem/src/test/java/dk/sdu/cbse/collisionsystem/CollisionDetectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionSystem/src/test/java/dk/sdu/cbse/collisionsystem/CollisionDetectorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionSystem/target/CollisionSystem-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionSystem/target/CollisionSystem-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionSystem/target/classes/dk/sdu/cbse/collisionsystem/CollisionDetector.class" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionSystem/target/classes/dk/sdu/cbse/collisionsystem/CollisionDetector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionSystem/target/surefire-reports/TEST-dk.sdu.cbse.collisionsystem.CollisionDetectorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionSystem/target/surefire-reports/TEST-dk.sdu.cbse.collisionsystem.CollisionDetectorTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionSystem/target/surefire-reports/dk.sdu.cbse.collisionsystem.CollisionDetectorTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionSystem/target/surefire-reports/dk.sdu.cbse.collisionsystem.CollisionDetectorTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionSystem/target/test-classes/dk/sdu/cbse/collisionsystem/CollisionDetectorTest$StubEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionSystem/target/test-classes/dk/sdu/cbse/collisionsystem/CollisionDetectorTest$StubEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionSystem/target/test-classes/dk/sdu/cbse/collisionsystem/CollisionDetectorTest$StubPointService.class" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionSystem/target/test-classes/dk/sdu/cbse/collisionsystem/CollisionDetectorTest$StubPointService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionSystem/target/test-classes/dk/sdu/cbse/collisionsystem/CollisionDetectorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionSystem/target/test-classes/dk/sdu/cbse/collisionsystem/CollisionDetectorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/src/main/java/dk/sdu/cbse/common/services/IEntityProcessingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/dk/sdu/cbse/common/services/IEntityProcessingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/src/main/java/dk/sdu/cbse/common/services/IPointService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/dk/sdu/cbse/common/services/IPointService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/target/Common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Common/target/Common-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/target/classes/dk/sdu/cbse/common/services/IPointService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Common/target/classes/dk/sdu/cbse/common/services/IPointService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CommonBullet/target/CommonBullet-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/CommonBullet/target/CommonBullet-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/src/main/java/dk/sdu/cbse/main/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/Core/src/main/java/dk/sdu/cbse/main/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/target/Core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Core/target/Core-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/target/classes/dk/sdu/cbse/main/Game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Core/target/classes/dk/sdu/cbse/main/Game$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/target/classes/dk/sdu/cbse/main/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/Core/target/classes/dk/sdu/cbse/main/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Enemy/target/Enemy-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Enemy/target/Enemy-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Player/target/Player-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Player/target/Player-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointSystem/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PointSystem/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointSystem/src/main/java/dk/sdu/cbse/pointsystem/PointSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/PointSystem/src/main/java/dk/sdu/cbse/pointsystem/PointSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointSystem/target/PointSystem-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PointSystem/target/classes/dk/sdu/cbse/pointsystem/PointSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/PointSystem/target/classes/dk/sdu/cbse/pointsystem/PointSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mods-mvn/Common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mods-mvn/Common-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mods-mvn/CommonBullet-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mods-mvn/CommonBullet-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mods-mvn/Core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mods-mvn/Core-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/Asteroid-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/Asteroid-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/Bullet-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/Bullet-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/CollisionSystem-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/CollisionSystem-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/Enemy-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/Enemy-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/Player-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/Player-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/PointSystem-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="75" />
+    <option name="cachedIndexableFilesCount" value="97" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -23,6 +64,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Niklas-Hakmann&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Niklas-Hakmann/Asteroids.git&quot;,
+    &quot;accountId&quot;: &quot;f309f331-45c2-41e8-bab3-cb17db661a8e&quot;
+  }
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -44,9 +100,11 @@
     &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/nikla/IdeaProjects/AsteroideSpilFX/AsteroidsFX/pom.xml&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -129,6 +187,9 @@
       <updated>1776513412722</updated>
       <workItem from="1777453749025" duration="2433000" />
       <workItem from="1779792677332" duration="2787000" />
+      <workItem from="1779871953746" duration="9392000" />
+      <workItem from="1779893642222" duration="738000" />
+      <workItem from="1779895704467" duration="75000" />
     </task>
     <servers />
   </component>

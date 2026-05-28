@@ -22,6 +22,9 @@ public class CollisionDetectorTest {
 
         @Override
         public void deductPoint() { score--; }
+
+        @Override
+        public void reset() { score = 0; }
     }
     //Stub for entity
     private static class StubEntity extends Entity {
@@ -122,5 +125,52 @@ public class CollisionDetectorTest {
         detector.process(gameData, world);
 
         assertFalse(world.getEntities().contains(asteroid));
+    }
+
+    @Test
+    public void oneBulletShouldDestroyOnlyOneAsteroid() {
+        Entity bullet = new StubEntity("BULLET", 0, 0, 5, 1);
+        Entity asteroid1 = new StubEntity("ASTEROID", 0, 0, 1, 1);
+        Entity asteroid2 = new StubEntity("ASTEROID", 5.5, 0, 1, 1);
+        world.addEntity(bullet);
+        world.addEntity(asteroid1);
+        world.addEntity(asteroid2);
+
+        detector.process(gameData, world);
+
+        assertEquals(1, pointService.getScore());
+        long remainingAsteroids = world.getEntities().stream()
+                .filter(e -> "ASTEROID".equals(e.getType())).count();
+        assertEquals(1, remainingAsteroids);
+    }
+
+    @Test
+    public void bulletKillsEnemyShouldAddPoint() {
+        Entity bullet = new StubEntity("BULLET", 0, 0, 5, 1);
+        Entity enemy = new StubEntity("ENEMY", 0, 0, 5, 1);
+        world.addEntity(bullet);
+        world.addEntity(enemy);
+
+        detector.process(gameData, world);
+
+        assertEquals(1, pointService.getScore());
+        assertFalse(world.getEntities().contains(enemy));
+    }
+
+    @Test
+    public void bulletIsRemovedEvenWhenAsteroidAlreadyDestroyed() {
+        Entity bullet1 = new StubEntity("BULLET", 0, 0, 5, 1);
+        Entity bullet2 = new StubEntity("BULLET", 11, 0, 5, 1);
+        Entity asteroid = new StubEntity("ASTEROID", 5, 0, 5, 1);
+        world.addEntity(bullet1);
+        world.addEntity(bullet2);
+        world.addEntity(asteroid);
+
+        detector.process(gameData, world);
+
+        assertEquals(1, pointService.getScore());
+        long remainingBullets = world.getEntities().stream()
+                .filter(e -> "BULLET".equals(e.getType())).count();
+        assertEquals(0, remainingBullets);
     }
 }

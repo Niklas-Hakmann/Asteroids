@@ -4,4 +4,5 @@ public interface IPointService {
     int getScore();
     void addPoint();
     void deductPoint();
+    void reset();
 }

@@ -53,6 +53,11 @@ class Game {
         System.out.println("Entity processors fundet: " + entityProcessors.size());
         System.out.println("Post processors fundet: " + postEntityProcessors.size());
 
+        // Ny runde starter altid på 0 (nulstiller også den eksterne score-microservice).
+        for (IPointService pointService : pointServices) {
+            pointService.reset();
+        }
+
         scoreText = new Text(10, 20, "Score: 0");
         scoreText.setFill(javafx.scene.paint.Color.WHITE);
         gameWindow.getChildren().add(scoreText);

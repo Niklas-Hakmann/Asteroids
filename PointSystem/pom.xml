@@ -42,11 +42,13 @@
             <plugin>
                 <artifactId>maven-dependency-plugin</artifactId>
                 <executions>
+                    <!-- Deaktiverer den nedarvede kopiering til plugins/. Microservicen
+                         (ScoreClient) er default scorer. Den lokale PointSystem bygges
+                         stadig til PointSystem/target/ - kopier den manuelt ind i plugins/
+                         (og fjern ScoreClient) for at demonstrere swap til lokal scoring. -->
                     <execution>
                         <id>copy-installed</id>
-                        <configuration>
-                            <outputDirectory>../plugins</outputDirectory>
-                        </configuration>
+                        <phase>none</phase>
                     </execution>
                 </executions>
             </plugin>
