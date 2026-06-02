@@ -50,7 +50,6 @@ public enum ServiceLocator {
         ServiceLoader<T> loader = (ServiceLoader<T>) serviceCache.computeIfAbsent(
                 service, s -> ServiceLoader.load(moduleLayer, s)
         );
-
         List<T> results = new ArrayList<>();
         try {
             loader.forEach(results::add);

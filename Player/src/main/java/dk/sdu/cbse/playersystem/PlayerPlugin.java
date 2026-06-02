@@ -16,14 +16,11 @@ public class PlayerPlugin implements IGamePluginService {
 
     @Override
     public void start(GameData gameData, World world) {
-
-        // Add entities to the world
         player = createPlayerShip(gameData);
         world.addEntity(player);
     }
 
     private Entity createPlayerShip(GameData gameData) {
-
         Entity playerShip = new Player();
         playerShip.setHealthPoints(6);
         playerShip.setType("PLAYER");
@@ -34,7 +31,6 @@ public class PlayerPlugin implements IGamePluginService {
         playerShip.setRadius(8);
         return playerShip;
     }
-
 
     @Override
     public void stop(GameData gameData, World world) {

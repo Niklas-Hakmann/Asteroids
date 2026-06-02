@@ -47,13 +47,7 @@ class Game {
         this.pointServices = pointServices;
     }
 
-    public void start(Stage window) throws Exception {
-        //midlertidig debugging
-        System.out.println("Plugins fundet: " + gamePlugins.size());
-        System.out.println("Entity processors fundet: " + entityProcessors.size());
-        System.out.println("Post processors fundet: " + postEntityProcessors.size());
-
-        // Ny runde starter altid på 0 (nulstiller også den eksterne score-microservice).
+    public void start(Stage window) {
         for (IPointService pointService : pointServices) {
             pointService.reset();
         }
@@ -98,7 +92,6 @@ class Game {
                 gameData.getKeys().setKey(GameKeys.SPACE, false);
         });
 
-        // Brug injicerede plugins i stedet for ServiceLoader
         for (IGamePluginService plugin : gamePlugins) {
             plugin.start(gameData, world);
         }

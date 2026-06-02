@@ -32,7 +32,6 @@ public class ScoreServiceClient implements IPointService {
         try {
             lastKnownScore = parse(restTemplate.getForObject(baseUrl, String.class));
         } catch (RestClientException | NumberFormatException e) {
-            warnOnce(e);
         }
         return lastKnownScore;
     }
@@ -42,7 +41,6 @@ public class ScoreServiceClient implements IPointService {
         try {
             lastKnownScore = parse(restTemplate.postForObject(baseUrl + "/add", null, String.class));
         } catch (RestClientException | NumberFormatException e) {
-            warnOnce(e);
             lastKnownScore++;
         }
     }
@@ -52,7 +50,6 @@ public class ScoreServiceClient implements IPointService {
         try {
             lastKnownScore = parse(restTemplate.postForObject(baseUrl + "/deduct", null, String.class));
         } catch (RestClientException | NumberFormatException e) {
-            warnOnce(e);
             if (lastKnownScore > 0) {
                 lastKnownScore--;
             }
@@ -64,20 +61,11 @@ public class ScoreServiceClient implements IPointService {
         try {
             lastKnownScore = parse(restTemplate.postForObject(baseUrl + "/reset", null, String.class));
         } catch (RestClientException | NumberFormatException e) {
-            warnOnce(e);
             lastKnownScore = 0;
         }
     }
 
     private int parse(String body) {
         return Integer.parseInt(body.trim());
-    }
-
-    private void warnOnce(Exception e) {
-        if (!warned) {
-            warned = true;
-            System.err.println("ScoreService unreachable at " + baseUrl
-                    + " - falling back to local score. Cause: " + e.getMessage());
-        }
     }
 }

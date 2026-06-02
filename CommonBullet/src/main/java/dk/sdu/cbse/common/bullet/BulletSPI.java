@@ -5,5 +5,5 @@ import dk.sdu.cbse.common.data.GameData;
 
 
 public interface BulletSPI {
-    Entity createBullet(Entity e, GameData gameData);
+    Entity createBullet(Entity shooter, GameData gameData);
 }
