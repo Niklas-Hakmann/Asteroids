@@ -11,15 +11,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.test.web.servlet.MockMvc;
 
-// Verificerer REST-kontrakten med MockMvc (uden rigtig server-socket).
+
 @WebMvcTest(ScoreController.class)
 class ScoreControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
 
-    // Controlleren deler state i den genbrugte context, så vi nulstiller
-    // pr. test for at gøre metoderne uafhængige af hinandens rækkefølge.
+
     @BeforeEach
     void resetScore() throws Exception {
         mockMvc.perform(post("/score/reset"));
