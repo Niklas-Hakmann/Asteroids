@@ -1,43 +1,8 @@
-# AsteroidsFX
-
-Komponent-baseret Asteroids-spil (JPMS + Spring) med scoring som microservice.
-
-## Kør spillet
-
-1. Byg alt (kopierer plugin-jars til `plugins/`):
-
-   ```
+1. Build
    mvn install
-   ```
 
-2. Start scoring-microservicen i sin egen terminal (port 8080):
-
-   ```
+2. Start scoring-microservice
    mvn -f ScoreService/pom.xml spring-boot:run
-   ```
 
-3. Start spillet (egen terminal):
-
-   ```
+3. Run game
    mvn exec:exec
-   ```
-
-## Vælg scorer (swap uden recompilation)
-
-Default efter `mvn install` er microservicen (`ScoreClient` i `plugins/`).
-`plugins/` må kun indeholde **én** `IPointService`.
-
-Skift til lokal scoring (swap-demo): kopiér den lokale variant ind og fjern
-microservice-klienten, og genstart spillet:
-
-```
-copy PointSystem\target\PointSystem-1.0-SNAPSHOT.jar plugins\
-del plugins\ScoreClient-1.0-SNAPSHOT.jar
-```
-
-Resten af spillet er uændret — ingen recompilation.
-
-## Microservice-API
-
-`http://localhost:8080` — `GET /score`, `POST /score/add`, `POST /score/deduct`, `POST /score/reset`.
-Er servicen nede, tæller spillet videre lokalt som fallback.
