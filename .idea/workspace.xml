@@ -6,36 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ec162c25-046b-45d5-badd-a65868305b3f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Asteroid/target/Asteroid-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Asteroid/target/Asteroid-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bullet/target/Bullet-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Bullet/target/Bullet-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollisionSystem/target/CollisionSystem-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionSystem/target/CollisionSystem-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollisionSystem/target/surefire-reports/TEST-dk.sdu.cbse.collisionsystem.CollisionDetectorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionSystem/target/surefire-reports/TEST-dk.sdu.cbse.collisionsystem.CollisionDetectorTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollisionSystem/target/surefire-reports/dk.sdu.cbse.collisionsystem.CollisionDetectorTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionSystem/target/surefire-reports/dk.sdu.cbse.collisionsystem.CollisionDetectorTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/target/Common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Common/target/Common-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CommonBullet/target/CommonBullet-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/CommonBullet/target/CommonBullet-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/target/Core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Core/target/Core-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/target/classes/dk/sdu/cbse/main/Game$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Core/target/classes/dk/sdu/cbse/main/Game$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/target/classes/dk/sdu/cbse/main/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/Core/target/classes/dk/sdu/cbse/main/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enemy/target/Enemy-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Enemy/target/Enemy-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Player/target/Player-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Player/target/Player-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Player/target/classes/dk/sdu/cbse/playersystem/PlayerControlSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/Player/target/classes/dk/sdu/cbse/playersystem/PlayerControlSystem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Player/target/classes/dk/sdu/cbse/playersystem/PlayerPlugin.class" beforeDir="false" afterPath="$PROJECT_DIR$/Player/target/classes/dk/sdu/cbse/playersystem/PlayerPlugin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PointSystem/target/PointSystem-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/PointSystem/target/PointSystem-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScoreClient/target/ScoreClient-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ScoreClient/target/ScoreClient-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScoreClient/target/classes/dk/sdu/cbse/scoreclient/ScoreServiceClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/ScoreClient/target/classes/dk/sdu/cbse/scoreclient/ScoreServiceClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScoreService/src/test/java/dk/sdu/cbse/scoreservice/ScoreControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScoreService/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ScoreService/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScoreService/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/ScoreService/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScoreService/target/test-classes/dk/sdu/cbse/scoreservice/ScoreControllerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mods-mvn/Common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mods-mvn/Common-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mods-mvn/CommonBullet-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mods-mvn/CommonBullet-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mods-mvn/Core-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mods-mvn/Core-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/Asteroid-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/Bullet-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/Bullet-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/CollisionSystem-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/CollisionSystem-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/Enemy-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/Enemy-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/Player-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/Player-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/ScoreClient-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/ScoreClient-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +154,7 @@
       <workItem from="1779957206319" duration="5002000" />
       <workItem from="1780046687113" duration="10202000" />
       <workItem from="1780128750290" duration="8724000" />
-      <workItem from="1780390678194" duration="5969000" />
+      <workItem from="1780390678194" duration="8178000" />
     </task>
     <servers />
   </component>
